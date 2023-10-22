@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Registrer bruker</h1>
+        <!--Skjema for registrering av brukere-->
+        <form action="../../index.php" method="post"> 
+            <table>
+                <tr>
+                    <td><label for="firstName">Fornavn</label></td>
+                    <td><input type="text" id="firstName" name="firstname"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="surName">Etternavn</label></td>
+                    <td><input type="text" id="lastName" name="lastname"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Epost</label></td>
+                    <td><input type="text" id="email" name="email"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Telefon</label></td>
+                    <td><input type="text" id="phone" name="phone"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Passord</label></td>
+                    <td><input type="text" id="password" name="password"><br></td>
+                </tr>
+            </table>
+
+            <fieldset>
+                <legend>Rolle</legend>
+                <label>
+                    <input type="radio" name="role" value="0" checked>Jobbsøker
+                </label>
+                <label>
+                    <input type="radio" name="role" value="1">Arbeidsgiver
+                </label>
+            </fieldset>
+            <br>
+            <button>Send</button>
+        </form>
+    </body>
+</html>
