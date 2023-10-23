@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logg inn</title>
+</head>
+<body>
+    <h1>Logg inn</h1>
+    <form action="../../index.php" method="post">
+        <div>
+            <label for="email">Epost:</label>
+            <input type="text" id="email" name="email" required><br>
+        </div>
+        <div>
+            <label for="password">Passord:</label>
+            <input type="password" id="password" name="password" required><br>
+        </div>
+            <label for="role">Jeg er:</label>
+            <input type="radio" id="jobbsoker" name="role" value="jobbsoker" required>
+            <label for="jobbsoker">Jobbsøker</label>
+            <input type="radio" id="arbeidsgiver" name="role" value="employer" required>
+            <label for="arbeidsgiver">Arbeidsgiver</label>
+        <div>
+            <input type="submit" value="Logg inn">
+        </div>
+    </form>
+
+    
+</body>
+</html>
